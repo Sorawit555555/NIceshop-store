@@ -1,0 +1,179 @@
+body {
+  background-color: #000; /* พื้นหลังสีดำ */
+  color: #000000; /* ข้อความเป็นสีขาว */
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+
+  color: #000101; /* ข้อความหัวข้อเป็นสีฟ้า */
+}
+
+.container {
+  color: #000000;
+  background-color: #fffbfb; /* กล่องข้อมูลโปร่งแสง */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* เงาเข้มขึ้น */
+  margin-top: 20px;
+  transition: background-color 0.3s ease; /* เพิ่มเอฟเฟกต์การเปลี่ยนสี */
+}
+
+.container:hover {
+  background-color: rgba(239, 232, 232, 0.92); /* เปลี่ยนสีเมื่อ hover */
+}
+
+.App {
+  text-align: center;
+  background-color: #555657;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #000; /* สีพื้นหลังส่วนหัว */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb; /* ลิงค์สีฟ้า */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* สำหรับปุ่ม */
+button {
+  background-color: #555657; /* สีพื้นหลังปุ่ม */
+  color: #000; /* ข้อความในปุ่มเป็นสีดำ */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* เอฟเฟกต์การเปลี่ยนสี */
+  
+}
+.btn-primary {
+  margin-top: 20px; 
+}
+button:hover {
+  background-color: #21a1f1; /* สีพื้นหลังปุ่มเมื่อ hover */
+}
+/* App.css */
+.product-image {
+  border: 2px solid #555657; /* สีกรอบ */
+  border-radius: 5px; /* มุมโค้ง */
+  padding: 5px; /* ระยะห่างระหว่างกรอบและรูปภาพ */
+  background-color: #ffffff; /* สีพื้นหลัง */
+  transition: transform 0.2s; /* เอฟเฟกต์ขยายเมื่อเอียง */
+}
+
+.product-image:hover {
+  transform: scale(1.05); /* ขยายเล็กน้อยเมื่อเอียง */
+}
+
+/* ปรับแต่งอื่นๆ เพิ่มเติมตามที่ต้องการ */
+.card-body {
+  border:  #fff4f4;
+background-color: rgb(255, 252, 252);
+}
+.btn-primary{
+  background: #555657;
+
+}
+
+input[type="text"], input[type="email"], input[type="number"], textarea {
+  background-color: #f0f8ff; /* สีพื้นหลัง */
+  border: 2px solid #5ea2eb; /* สีกรอบ */
+  border-radius: 5px; /* มุมโค้งมน */
+  padding: 10px; /* ระยะห่างภายใน */
+  font-size: 16px; /* ขนาดตัวอักษร */
+  color: #000; /* สีของข้อความ */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* เอฟเฟกต์การเปลี่ยนสี */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, textarea:focus {
+  border-color: #21a1f1; /* เปลี่ยนสีกรอบเมื่อ focus */
+  box-shadow: 0 0 8px rgba(33, 161, 241, 0.6); /* เงารอบ ๆ เมื่อ focus */
+  outline: none; /* เอาเส้นขอบมาตรฐานออก */
+}
+
+/* สำหรับกล่องสินค้า */
+.product-container {
+  background-color: #fff; /* สีพื้นหลังของกล่องสินค้า */
+  border: 1px solid #ddd; /* กรอบบาง */
+  border-radius: 10px; /* มุมโค้งมน */
+  padding: 20px;
+  margin: 20px;
+  transition: box-shadow 0.3s ease; /* เพิ่มเอฟเฟกต์เงา */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาเบา */
+}
+
+.product-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* เงาเพิ่มเมื่อ hover */
+}
+
+
+/* เมนูนำทาง */
+.menu {
+  background-color: #181919;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px; /* ทำมุมโค้ง */
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none; /* ลบจุดหน้ารายการ */
+  display: flex; /* แสดงเป็นแถว */
+  gap: 15px; /* ช่องว่างระหว่างปุ่ม */
+}
+
+.menu ul li {
+  display: inline-block; /* จัดแถวปุ่ม */
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu ul li a:hover {
+  background-color: #000000; /* สีพื้นหลังเมื่อชี้ */
+}
+.menu button {
+  background-color: #555657; /* สีพื้นหลังปุ่ม */
+  color: white; /* สีข้อความ */
+  border: none; /* ไม่มีขอบ */
+  border-radius: 5px; /* ทำมุมโค้ง */
+  padding: 10px 20px; /* ช่องว่างในปุ่ม */
+  cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ปุ่ม */
+  transition: background-color 0.3s ease; /* เอฟเฟกต์การเปลี่ยนสี */
+}
